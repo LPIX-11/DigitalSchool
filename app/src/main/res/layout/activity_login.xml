@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="controller.digitalschool.jcorp.digitalschool.LoginActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connection"
+        android:gravity="center"
+        android:textSize="@dimen/title_size"
+        android:autoSizeMaxTextSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultFocusHighlightEnabled="true"
+        android:hint="@string/login"
+        android:layout_margin="@dimen/default_margin"
+        android:id="@+id/txtLogin"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultFocusHighlightEnabled="true"
+        android:hint="@string/password"
+        android:layout_margin="@dimen/default_margin"
+        android:inputType="textPassword"
+        android:id="@+id/txtPasswd"
+        />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_button_margin"
+        android:background="@color/colorSmokeBlue"
+        android:text="@string/connection" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_button_margin"
+        android:background="@color/colorDarkBlue"
+        android:textColor="@color/colorWhite"
+        android:text="@string/registration" />
+
+</LinearLayout>

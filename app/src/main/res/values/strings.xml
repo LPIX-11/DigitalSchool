@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DigitalSchool</string>
+
+    <string name="connection">Connection</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="registration">Registration</string>
+
+    <string name="formation">Formation</string>
+    <string name="mark">Mark</string>
+    <string name="university">University</string>
+
+    <string name="videos">Videos</string>
+    <string name="help">Help</string>
+    <string name="cancel">Cancel</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last Name</string>
+
+    <string name="degrees">Degrees</string>
+    <string name="bachelor">Bachelor</string>
+    <string name="master">Master</string>
+    <string name="o_level">Licence</string>
+
+    <string name="success">Success</string>
+    <string name="save">save</string>
+    <string name="wait">wait</string>
+    <string name="welcome">Welcome</string>
+
+    <string name="error_save">Error While Saving</string>
+    <string name="success_save">User Saved</string>
+    <string name="error_login">Error While Login</string>
+
+</resources>
