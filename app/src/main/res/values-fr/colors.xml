@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Personalized Colors -->
+    <color name="colorSmokeBlue">#9292b6</color>
+    <color name="colorDarkBlue">#00007f</color>
+    <color name="colorMarineBlue">#30a9ef</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorNightTheme">#363636</color>
+
+    <!-- Default Colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>
