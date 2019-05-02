@@ -1,5 +1,5 @@
 <resources>
-
+    <!-- Login Activity Page -->
     <string name="app_name">DigitalSchool</string>
 
     <string name="connection">Connexion</string>
@@ -28,7 +28,17 @@
     <string name="welcome">Bienvenue</string>
 
     <string name="error_save">Erreurs lors de l\'enregistrement</string>
+    <string name="error_field">Veuillez Renseigner Tous Les Champs</string>
     <string name="success_save">Utilisateur Enregistré</string>
     <string name="error_login">Erreur lors de la connexion</string>
+
+    <!-- Home Activity Page -->
+    <string name="title_activity_home">Accueil</string>
+    <string name="navigation_drawer_open">Ouvrir la navigation</string>
+    <string name="navigation_drawer_close">Fermer la navigation</string>
+    <string name="nav_header_title">Default: User</string>
+    <string name="nav_header_subtitle">jcorp.digital@develop.com</string>
+    <string name="nav_header_desc">Entête</string>
+    <string name="action_settings">Paramètres</string>
     
 </resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Computer Science -->
+    <string-array name="training_array">
+        <item>Software Engineering</item>
+        <item>Computer Science</item>
+        <item>Data Science</item>
+        <item>Networking</item>
+        <item>Cyber Security</item>
+        <item>Robotics</item>
+        <item>Domotic</item>
+        <item>Artificial Intelligence</item>
+        <item>Machine Learning</item>
+        <item>Q Learning</item>
+    </string-array>
+
+    <string-array name="detailed_training_array">
+        <item>JAVA, Java EE, C#, PHP, Android, ASP, SQL, Angular. Software Developer</item>
+        <item>UML, Agile, CI, C-Delivery, C-Deploiement</item>
+        <item>Data Science</item>
+        <item>Linux, VoIP, Transmission, CCNA. Network Adminnistrator, System Administrator</item>
+        <item>Firewalling, Routing, Switching</item>
+        <item>Robotics</item>
+        <item>Domotic</item>
+        <item>Neural Networks, Learning Process, Artificial Neural Networks</item>
+        <item>Machine Learning</item>
+        <item>Q Learning</item>
+    </string-array>
+</resources>

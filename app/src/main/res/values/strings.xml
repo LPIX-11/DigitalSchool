@@ -1,12 +1,13 @@
 <resources>
+    <!-- Login Activity Page -->
     <string name="app_name">DigitalSchool</string>
 
-    <string name="connection">Connection</string>
+    <string name="connection">Sign In</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="registration">Registration</string>
 
-    <string name="formation">Formation</string>
+    <string name="formation">Training</string>
     <string name="mark">Mark</string>
     <string name="university">University</string>
 
@@ -27,7 +28,17 @@
     <string name="welcome">Welcome</string>
 
     <string name="error_save">Error While Saving</string>
+    <string name="error_field">Please Fill All Fields</string>
     <string name="success_save">User Saved</string>
     <string name="error_login">Error While Login</string>
+
+    <!-- Home Activity Page -->
+    <string name="title_activity_home">Welcome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Default: User</string>
+    <string name="nav_header_subtitle">jcorp.digital@develop.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
