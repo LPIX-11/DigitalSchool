@@ -8,6 +8,18 @@
     android:orientation="vertical"
     >
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <activity android:name=".LoginActivity">
+
+        <intent-filter>
+            <action android:name="android.intent.action.Main" />
+            <category android:name="andrdoid.intent.category.LAUNCHER"/>
+        </intent-filter>
+
+
+    </activity>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

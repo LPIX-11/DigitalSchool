@@ -1,9 +1,12 @@
 package controller.digitalschool.jcorp.digitalschool;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -21,7 +24,7 @@ public class TrainingActivity extends AppCompatActivity {
     private String detailedTrainingArray[];
 
     // Creating the temporary holding training
-    private String formation;
+    private String training;
 
     // Creating the temporary holding its details
     private String details;
@@ -48,6 +51,37 @@ public class TrainingActivity extends AppCompatActivity {
 
         // Printing the data
         trainingList.setAdapter(adapter);
+
+        trainingList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                training = trainingArray[position];
+                details = detailedTrainingArray[position];
+
+                AlertDialog.Builder dialog = new AlertDialog.Builder(TrainingActivity.this);
+
+                dialog.setTitle(training);
+                dialog.setIcon(R.mipmap.ic_launcher);
+                dialog.setMessage(details);
+                dialog.setPositiveButton(getString(R.string.registration), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Redirecting the user if all informations are correct
+                        Intent intent = new Intent(TrainingActivity.this, RegistrationActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                dialog.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+
+                dialog.show();
+            }
+        });
 
     }
 

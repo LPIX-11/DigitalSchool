@@ -8,7 +8,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class LoginActivity extends AppCompatActivity {
+import javax.xml.transform.Result;
+
+import me.dm7.barcodescanner.zxing.ZXingScannerView;
+
+public class LoginActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
     // Calling the fileds variables
 
     // Input fields
@@ -23,6 +27,9 @@ public class LoginActivity extends AppCompatActivity {
     private String login;
     private String password;
 
+    // Scanner declaration
+    private ZXingScannerView mScannerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +38,12 @@ public class LoginActivity extends AppCompatActivity {
         // Linking using correspondance
 
         // Retrieving input fields
-        this.txtLogin = findViewById(R.id.txtLogin);
-        this.txtPasswd = findViewById(R.id.txtPasswd);
+        // this.txtLogin = findViewById(R.id.txtLogin);
+        // this.txtPasswd = findViewById(R.id.txtPasswd);
 
         // Retrieving buttons
-        this.btnSignin = findViewById(R.id.btnSignin);
-        this.btnRegister = findViewById(R.id.btnRegister);
+        // this.btnSignin = findViewById(R.id.btnSignin);
+        // this.btnRegister = findViewById(R.id.btnRegister);
 
         this.btnSignin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,4 +68,28 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    public void onClick(View v) {
+        mScannerView = new ZXingScannerView(this);
+
+        setContentView(mScannerView);
+        mScannerView.setResultHandler(this);
+
+        mScannerView.startCamera();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mScannerView.stopCamera();
+    }
+
+    @Override
+    public void handleResult(com.google.zxing.Result result) {
+        Toast.makeText(LoginActivity.this, getString(R.string.success), Toast.LENGTH_SHORT).show();
+        // Redirecting the user if all informations are correct
+        Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+        startActivity(intent);
+
+        mScannerView.resumeCameraPreview(this);
+    }
 }

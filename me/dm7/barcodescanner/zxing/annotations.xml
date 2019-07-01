@@ -1,0 +1,5 @@
+<root>
+    <item name='me.dm7.barcodescanner.zxing.ZXingScannerView'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

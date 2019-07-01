@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="controller.digitalschool.jcorp.digitalschool.RegistrationActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration"
+        android:gravity="center"
+        android:textSize="@dimen/sub_title_size"
+        android:autoSizeMaxTextSize="@dimen/sub_title_size"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultFocusHighlightEnabled="true"
+        android:hint="@string/first_name"
+        android:layout_margin="@dimen/default_margin"
+        android:id="@+id/txtLastName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultFocusHighlightEnabled="true"
+        android:hint="@string/last_name"
+        android:layout_margin="@dimen/default_margin"
+        android:inputType="textPassword"
+        android:id="@+id/txtPasswd"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/degrees"
+        android:gravity="center"
+        android:textSize="@dimen/title_size"
+        android:autoSizeMaxTextSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <CheckBox
+        android:layout_width="@dimen/default_button_margin"
+        android:layout_height="@dimen/default_button_margin"
+        android:text="@string/bachelor"
+        />
+
+    <CheckBox
+        android:layout_width="@dimen/default_button_margin"
+        android:layout_height="@dimen/default_button_margin"
+        android:text="@string/master"
+        />
+
+    <CheckBox
+        android:layout_width="@dimen/default_button_margin"
+        android:layout_height="@dimen/default_button_margin"
+        android:text="@string/o_level"
+        />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_button_margin"
+        android:background="@color/colorSmokeBlue"
+        android:text="@string/save"
+        />
+
+</LinearLayout>
